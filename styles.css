@@ -1,0 +1,401 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body
+  {
+    background-color: rgb(241,242,244)
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #ffffff; /* Flipkart's primary color */
+    padding: 10px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    height: 48;
+    /* margin: 0 auto; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust as needed */
+    height: 200px;
+    margin-left: 35;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    
+    /* padding-right: ; */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    
+    /* padding-bottom: 5px; */
+    /* align-items: center; */
+    text-decoration: none;
+    color: #000000; 
+    
+  }
+  #login
+  {
+    
+    margin-left: 22px;
+    padding-left: 6px;
+    width: 110px;
+    height: 40px; /* Increase the height as needed */
+    line-height: 40px;      
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+  }
+  #cart
+  {
+    margin-left: 20px;
+  }
+
+  #seller
+  {
+    margin-left:20px;
+    /* font-size: ; */
+    width: 180px;
+  }
+  #login:hover a {
+    background-color: #1000f7; /* Background color when hovering */
+    color: #ffffff; /* Text color when hovering */
+    border-radius: 6px;
+}
+
+#login:hover img {
+    filter: brightness(0) invert(1); /* Change image color to white */
+}
+
+
+
+  
+  .search-bar input[type="text"] {
+    padding: 8px 4px;
+    /* border: darkgray; */
+    margin-left: 40px;
+    background-color: rgb(240,245,255);
+    height: 40px;
+    width: 815px;
+    
+    border-style: hidden;
+    border-radius: 6px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #f4c20d; /* Flipkart's secondary color */
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+  }
+  /* Add this CSS for arrow rotation */
+.nav-links li a .arrow {
+  width: 10px; /* Adjust width as per your arrow image */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover .arrow {
+  transform: rotate(180deg);
+}
+
+#search
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    
+}
+#category
+{
+    margin: 6px 15px 15px 15px;
+    height: 17vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 150px ;
+}
+.category-image
+{
+   
+    margin: 5px;
+     /* height: 50px; */
+}
+.category-label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small    ;
+    font-weight: 800;
+    margin-top: 5px; /* Add space between image and label */
+    /* font-size: 18px; Adjust font size as needed */
+}
+.category
+{
+    text-align: center; 
+    margin-left: 6vh;
+}
+
+.slideshow-container {
+    width: 100%;
+    padding: 2vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Hide slides that extend beyond the container */
+}
+
+.slide {
+  display: none; /* Initially hide all slides */
+}
+
+.slide img {
+  width: 100%; 
+  height: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px; 
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.slide {
+  animation-name: fade;
+  animation-duration: 1.5s; 
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.heading {
+    font-size: 19px; /* Adjust font size as needed */
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold; 
+    text-align: left; /* Center align the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+    width: 100%; /* Make the heading full width */
+}
+.electronics {
+    flex-grow: 1; /* Allow the electronics section to grow to fill available space */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% - 20px);;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 370px; /* Adjust the height as needed */
+    margin-left:15px ;
+    margin-right: 15px;
+    background-color: #ffffff;
+    padding: 10px; /* Add padding to the container */
+}
+.ele-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 20px;
+}
+
+.ad-image img {
+    /* width: 300px; Adjust the width as needed */
+    height: 370px; /* Adjust the height as needed */
+    object-fit: contain; /* Ensure the image covers the entire container */
+    /* padding-right: px; */
+    margin-right: 15PX;
+    
+}
+/* .ad-image
+{
+    margin-right: 20px;
+} */
+
+
+
+
+    
+        #slides1
+        {
+            box-sizing: border-box;
+            max-width: 1450px;
+            display: flex;
+            
+            overflow-x: scroll;
+        }
+        #slides1::-webkit-scrollbar
+        {
+            display: none;
+        }
+        .products
+        {
+            
+            width: 1423px;
+            height: 280px;
+            display: flex;
+            /* grid-gap: 20px; */
+            padding: 10px;
+            margin-left: 10px;
+            /* align-items: center; */
+            flex-direction: column;
+            /* flex: none; */
+            border: 1px solid rgb(229,229,229);
+            
+            align-items: center;
+            border-radius: 6px;
+            /* position: relative; */
+        }
+        .products:not(:first-child) {
+            margin-left: 20px; /* Add left margin for all products except the first one */
+        }
+        .electronics-label {
+            margin-top: 10px;
+            color: gray;
+        }
+        .electronics-pricel {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 5px;
+            /* font-weight: bold; */
+            /* font-size: small; */
+        }
+    .ele-img
+    {
+        width: 200px; /* Make the image fill the width of the container */
+        height: 200px; /* Make the image fill the height of the container */
+        object-fit: contain; /
+
+    }
+    .ele-img:hover{
+        transform: scale(1,1);
+        cursor: pointer;
+      }
+    
+    #secnd-row
+    {
+        width: 100px;
+    }
+    #slides2
+        {
+            box-sizing: border-box;
+            max-width: 210vh;
+            display: flex;
+            
+            overflow-x: scroll;
+        }
+        #slides2::-webkit-scrollbar
+        {
+            display: none;
+        }
+
+        #electronics-slider {
+            position: relative; /* Position relative for absolute positioning of arrows */
+        }
+        
+        .navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center arrows vertically */
+            width: 100%;
+        }
+        
+        .prev-arrow,
+        .next-arrow {
+            cursor: pointer;
+            padding: 10px;
+            /* Add background color and hover effect as desired */
+            cursor: pointer;
+  /* position: absolute;
+  top: 50%; */
+  /* width: auto; */
+  /* margin-top: -22px; 
+  padding: 16px; */
+  color: rgb(216, 203, 203);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  /* background-color: #000; */
+        }
+        
+          
+        .next-arrow .prev-arrow{
+            right: 0;
+            border-radius: 3px;
+          }
+          
+          .prev-arrow:hover, .next-arrow:hover {
+            background-color: rgba(0,0,0,0.6);
+          }
+          .container-3rd-row {
+            display: flex;
+          }
+          
+          .left-panel {
+            width: 33.33%; /* 1/3rd of screen */
+            padding: 20px;
+            background-color: #ffffff;
+          }
+          
+          .right-panel {
+            flex-grow: 1; /* Takes remaining space */
+          }
+          
+          .product-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            
+          }
+          
+          .product {
+            flex-basis: calc(50% - 10px); /* 2 products in a row */
+            text-align: center;
+          }
+          
+          .product img {
+            width: 100%;
+            height: auto;
+          }
+          
+          h2 {
+            margin-top: 0;
+          }
+          
