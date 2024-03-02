@@ -138,11 +138,12 @@
 {
    
     margin: 5px;
+    width: 90px;
      /* height: 50px; */
 }
 .category-label {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: small    ;
+    /* font-size: small    ; */
     font-weight: 800;
     margin-top: 5px; /* Add space between image and label */
     /* font-size: 18px; Adjust font size as needed */
@@ -214,12 +215,12 @@
     width: 100%; /* Make the heading full width */
 }
 .electronics {
-    flex-grow: 1; /* Allow the electronics section to grow to fill available space */
-    display: flex;
-    flex-wrap: wrap;
-    max-width: calc(100% - 20px);;
-    /* justify-content: space-around; */
+    /* flex-grow: 1; /* Allow the electronics section to grow to fill available space */
+    display: flex; 
+    
+    max-width: 2000px;
     align-items: center;
+    width: 1680px;
     height: 370px; /* Adjust the height as needed */
     margin-left:15px ;
     margin-right: 15px;
@@ -234,16 +235,13 @@
 
 .ad-image img {
     /* width: 300px; Adjust the width as needed */
+    width: 100%;
     height: 370px; /* Adjust the height as needed */
     object-fit: contain; /* Ensure the image covers the entire container */
     /* padding-right: px; */
     margin-right: 15PX;
     
 }
-/* .ad-image
-{
-    margin-right: 20px;
-} */
 
 
 
@@ -252,7 +250,7 @@
         #slides1
         {
             box-sizing: border-box;
-            max-width: 1450px;
+            max-width: 1650px;
             display: flex;
             
             overflow-x: scroll;
@@ -296,17 +294,18 @@
     {
         width: 200px; /* Make the image fill the width of the container */
         height: 200px; /* Make the image fill the height of the container */
-        object-fit: contain; /
+        object-fit: contain; 
+        transition: transform 0.3s;
 
     }
     .ele-img:hover{
-        transform: scale(1,1);
+        transform: scale(1.1);
         cursor: pointer;
       }
     
-    #secnd-row
+    #scnd-row
     {
-        width: 100px;
+        width: 1945px;
     }
     #slides2
         {
@@ -372,6 +371,9 @@
             width: 33.33%; /* 1/3rd of screen */
             padding: 20px;
             background-color: #ffffff;
+            max-width: 600px;
+            margin-left: 15px;
+            margin-right: 25px;
           }
           
           .right-panel {
@@ -393,9 +395,19 @@
           .product img {
             width: 100%;
             height: auto;
+            transition: transform 0.3s;
+          }
+          :hover{
+            transform: scale(1.1);
+            cursor: pointer;
           }
           
           h2 {
             margin-top: 0;
           }
-          
+          .left-img
+          {
+            max-width: 100%;
+            max-height:  200px;
+            object-fit: contain;
+          }
