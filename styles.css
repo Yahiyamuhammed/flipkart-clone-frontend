@@ -5,6 +5,10 @@
     box-sizing: border-box;
     
   }
+  ::-webkit-scrollbar
+        {
+            display: none;
+        }
   body
   {
     background-color: rgb(241,242,244)
@@ -220,7 +224,7 @@
     
     max-width: 2000px;
     align-items: center;
-    width: 1680px;
+    width: 1700px;
     height: 370px; /* Adjust the height as needed */
     margin-left:15px ;
     margin-right: 15px;
@@ -305,7 +309,7 @@
     
     #scnd-row
     {
-        width: 1945px;
+        width: 1965px;
     }
     #slides2
         {
@@ -365,11 +369,14 @@
           }
           .container-3rd-row {
             display: flex;
+            margin-bottom: 20px;
+            margin-right: 20px;
           }
           
           .left-panel {
             width: 33.33%; /* 1/3rd of screen */
             padding: 20px;
+            max-height: 45rem;
             background-color: #ffffff;
             max-width: 600px;
             margin-left: 15px;
@@ -378,6 +385,11 @@
           
           .right-panel {
             flex-grow: 1; /* Takes remaining space */
+            
+          }
+          .right-img{
+            width: 100rem;
+            max-height: 45rem;
           }
           
           .product-row {
@@ -390,17 +402,24 @@
           .product {
             flex-basis: calc(50% - 10px); /* 2 products in a row */
             text-align: center;
+            display: flex; /* Use flexbox layout */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-end;
+            border: 1px solid rgb(229,229,229);
+            border-radius: 6px  ;
           }
           
-          .product img {
+          .left-img {
             width: 100%;
             height: auto;
             transition: transform 0.3s;
+            
           }
-          :hover{
+          .left-img:hover {
             transform: scale(1.1);
             cursor: pointer;
           }
+          
           
           h2 {
             margin-top: 0;
@@ -411,3 +430,46 @@
             max-height:  200px;
             object-fit: contain;
           }
+          
+         
+          .product:nth-child(2) .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%; /* Adjust according to your needs */
+          }
+          
+          /* Adjust font sizes */
+/* Target the .footer-content element */
+.footer-content {
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+/* Target the .foot-div element */
+.foot-div {
+  display: flex; /* Make each section display as a flexbox */
+  align-items: center; /* Align heading and paragraph vertically */
+  margin-right: 10px; /* Add margin to the right of each section */
+}
+
+/* Target the .footer-h class */
+.footer-h {
+  font-size: 1.2em; /* Set the font size slightly larger than paragraphs */
+  margin-right: 10px; /* Add margin to the right of the heading */
+  white-space: nowrap; /* Prevent wrapping within the heading */
+}
+
+/* Target the .footer-p class */
+.footer-p {
+  flex: 1; /* Allow paragraph to grow and fill remaining space */
+}
+
+/* Target the vertical line divs */
+.vertical-line {
+  width: 1px;
+  background-color: #ddd; /* Set the color of the line */
+  margin: 0 10px; /* Add margin on both sides of the line */
+}
+
+                    
+        
