@@ -438,39 +438,136 @@
             justify-content: center;
             height: 100%; /* Adjust according to your needs */
           }
-          
-          /* Adjust font sizes */
-/* Target the .footer-content element */
-.footer-content {
-  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
-}
-
-/* Target the .foot-div element */
-.foot-div {
-  display: flex; /* Make each section display as a flexbox */
-  align-items: center; /* Align heading and paragraph vertically */
-  margin-right: 10px; /* Add margin to the right of each section */
-}
-
-/* Target the .footer-h class */
-.footer-h {
-  font-size: 1.2em; /* Set the font size slightly larger than paragraphs */
-  margin-right: 10px; /* Add margin to the right of the heading */
-  white-space: nowrap; /* Prevent wrapping within the heading */
-}
-
-/* Target the .footer-p class */
-.footer-p {
-  flex: 1; /* Allow paragraph to grow and fill remaining space */
-}
-
-/* Target the vertical line divs */
-.vertical-line {
-  width: 1px;
-  background-color: #ddd; /* Set the color of the line */
-  margin: 0 10px; /* Add margin on both sides of the line */
-
-}
-
+          .footer-content
+          {
+            background-color: rgb(245,245,245);
+            color: rgb(135,135,135);
+            padding: 25px;
+          }
+         .footer-h
+         {
+          display: inline;
+          font-size: 1.2em;
+         }
+         .footer-p
+         {
+          display: inline;
+          font-size: .9em;
+         }
                     
-/* nothing */
+         .vertical-line
+         {
+          margin: 10px;
+         }
+         .footer-heading 
+         {
+          font-weight: bold;
+          font-size: 1.2em;
+         }
+         .footer-subheading
+         {
+          font-weight: bold;
+          font-size: 1.2em;
+         }
+         .footer-paragraph
+         {
+          font-size: .95em;
+         }
+         
+
+         .footer-last {
+          display: flex;
+          justify-content: space-between;
+          background-color: #333;
+          color: white;
+          padding: 40px;
+          padding-left: 60px;
+          padding-right: 60px;
+          padding-bottom: 40px;
+        }
+        
+        .footer-last div {
+          margin-right: 20px;
+        }
+        
+        .footer-last div:last-child {
+          margin-right: 0;
+        }
+        
+        .footer-last div h3 {
+          margin-bottom: 10px;
+          color: rgb(129,127,129);
+        }
+        
+        .footer-last div p {
+          margin-bottom: 5px;
+        }
+        .footer-last h3
+        {
+          font-size: .8em;
+        }
+        .footer-last p
+        {
+          font-size: .7em;
+          font-weight: bold;
+        }
+        
+        .social {
+          margin-top: 20px;
+        }
+        
+        .registered {
+          margin-top: 20px;
+        }
+        #mail-us {
+          border-left: .1px solid white;
+          padding-left: 20px;
+          font-weight: normal;
+        }
+        #addres
+        {
+          font-weight: normal;
+        }
+        
+        .social {
+          /* display: flex;
+          justify-content: space-between; */
+          
+          margin-top: 20px;
+        }
+        
+        .social img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+        .footer-bottom {
+          background-color: #333;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          padding-left: 100px;
+          padding-right: 100px;
+          color: #fff;
+          flex-wrap: wrap;
+          border-top: .1px solid white;
+          font-size: .7em;
+      }
+  
+      .footer-bottom div {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+      }
+  
+      .footer-bottom img {
+          width: 12px;
+          height: 12px;
+          margin-right: 10px;
+      }
+      #payment-methods
+      {
+        width: 100%;
+          
+      }
