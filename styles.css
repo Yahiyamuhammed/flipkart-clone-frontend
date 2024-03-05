@@ -22,7 +22,7 @@
   
   .container {
     max-width: 1200px;
-    height: 48;
+    height: 9vh;
     /* margin: 0 auto; */
     display: flex;
     /* justify-content: space-between; */
@@ -30,7 +30,7 @@
   }
   
   .logo img {
-    width: 150px; /* Adjust as needed */
+    width: 11vw; /* Adjust as needed */
     height: 200px;
     margin-left: 35;
   }
@@ -62,22 +62,29 @@
   {
     
     margin-left: 22px;
-    padding-left: 6px;
-    width: 110px;
-    height: 40px; /* Increase the height as needed */
-    line-height: 40px;      
+    padding-left: 2vw;
+    padding-right: 3vw;
+    width: 8vw;
+    
+   
+
+    /* height: 1px; Increase the height as needed */
+    /* line-height: 40px;       */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
   }
+  
+  
   #cart
   {
-    margin-left: 20px;
+    margin-left:1vw;
+    width: 3vw;
   }
 
   #seller
   {
-    margin-left:20px;
+    margin-left:2vw;
     /* font-size: ; */
-    width: 180px;
+    width: 11vw;
   }
   #login:hover a {
     background-color: #1000f7; /* Background color when hovering */
@@ -91,6 +98,13 @@
 
 
 
+/* Existing CSS */
+/* ... */
+
+/* Responsive CSS */
+
+
+
   
   .search-bar input[type="text"] {
     padding: 8px 4px;
@@ -98,7 +112,7 @@
     margin-left: 40px;
     background-color: rgb(240,245,255);
     height: 40px;
-    width: 815px;
+    width: 49vw;
     
     border-style: hidden;
     border-radius: 6px;
@@ -114,8 +128,8 @@
   }
   /* Add this CSS for arrow rotation */
 .nav-links li a .arrow {
-  width: 10px; /* Adjust width as per your arrow image */
-  height: auto; /* Maintain aspect ratio */
+  width: 2vw; /* Adjust width as per your arrow image */
+  height: 3vh; /* Maintain aspect ratio */
   transition: transform 0.3s ease;
 }
 
@@ -129,6 +143,81 @@
     font-size: larger;
     
 }
+
+
+/* Existing CSS */
+/* ... */
+
+/* Responsive CSS */
+@media screen and (max-width: 1024px) {
+  #cart a, #seller a {
+    /* Hide the text next to the images */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #login{
+    margin-right: 5vw;
+  }
+  #search
+  {
+    width: 30vw;
+  }
+  
+  #cart, #seller {
+    /* Maintain the gap between the images */
+    margin-right: 10px; /* Adjust as needed */
+  }
+  #cart
+  {
+    width: 2vw;
+  }
+  #seller
+  {
+    margin-right: 7vw;
+  }
+  .logo img
+  {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container
+  {
+    justify-content: space-between;
+  }
+  
+  .search-bar {
+    display: none; /* Hide search bar */
+  }
+
+  .logo img {
+    width: 20vw;
+    margin-right: auto; /* Align logo to the left */
+  }
+
+  .nav-links {
+     /* Align nav-links to the right */
+  }
+
+  .nav-links li:last-child {
+    display: flex; /* Show the 3-dot menu on the left side of the logo */
+    margin-left: auto; /* Align 3-dot menu to the right */
+  }
+  #dot
+  {
+    display: none;
+  }
+  .arrow
+  {
+    display: none;
+  }
+}
+
+
+
 #category
 {
     margin: 6px 15px 15px 15px;
@@ -142,7 +231,7 @@
 {
    
     margin: 5px;
-    width: 90px;
+    width: 5vw;
      /* height: 50px; */
 }
 .category-label {
@@ -157,6 +246,36 @@
     text-align: center; 
     margin-left: 6vh;
 }
+
+@media screen and (max-width: 1024px) {
+  
+  #category {
+    padding-left: 0; /* Reset padding */
+    overflow-x: hidden; /* Enable horizontal scrolling */
+  }
+
+  }
+@media screen and (max-width: 768px) {
+  #category {
+    padding-left: 0; /* Reset padding */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .category {
+    margin-left: 0; /* Reset margin */
+    margin-right: 10px; /* Add margin between categories */
+    flex-shrink: 0; /* Prevent categories from shrinking */
+  }
+
+  .category-image {
+    width: 60px; /* Adjust image width */
+  }
+
+  .category-label {
+    font-size: smaller; /* Adjust font size */
+  }
+}
+
 
 .slideshow-container {
     width: 100%;
@@ -224,7 +343,7 @@
     
     max-width: 2000px;
     align-items: center;
-    width: 1700px;
+    width: 1315px;
     height: 370px; /* Adjust the height as needed */
     margin-left:15px ;
     margin-right: 15px;
@@ -239,11 +358,11 @@
 
 .ad-image img {
     /* width: 300px; Adjust the width as needed */
-    width: 100%;
+    /* width: 100px;   */
     height: 370px; /* Adjust the height as needed */
     object-fit: contain; /* Ensure the image covers the entire container */
     /* padding-right: px; */
-    margin-right: 15PX;
+    padding-right: 150px;
     
 }
 
@@ -254,7 +373,7 @@
         #slides1
         {
             box-sizing: border-box;
-            max-width: 1650px;
+            max-width: 1290px;
             display: flex;
             
             overflow-x: scroll;
@@ -307,6 +426,64 @@
         cursor: pointer;
       }
     
+/* Existing CSS */
+/* ... */
+
+/* Responsive CSS */
+
+
+@media screen and (max-width: 1200px) {
+  
+  .ele-container {
+    padding-right: 20px; /* Add padding to the right side of the container */
+  }
+
+  .ad-image {
+    display: none; /* Hide the ad image */
+  }
+
+
+  }
+@media screen and (max-width: 1024px) {
+  .electronics {
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center align the elements */
+    width: 100%; /* Make the electronics section full width */
+    height: auto; /* Adjust the height as needed */
+  }
+
+  .ad-image img {
+    width: 100%; /* Make the image fill the width of the container */
+    padding-right: 0; /* Remove the right padding */
+  }
+
+  #slides1 {
+    flex-direction: column; /* Stack the slides vertically */
+    align-items: center; /* Center align the slides */
+  }
+
+  .products {
+    width: 100%; /* Make the products full width */
+    height: auto; /* Adjust the height as needed */
+  }
+
+  .ele-img {
+    width: 100%; /* Make the image fill the width of the container */
+  }
+
+  .ele-container {
+    padding-right: 20px; /* Add padding to the right side of the container */
+  }
+
+  .ad-image {
+    display: none; /* Hide the ad image */
+  }
+
+}
+
+
+
+      
     #scnd-row
     {
         width: 1965px;
@@ -367,6 +544,35 @@
           .prev-arrow:hover, .next-arrow:hover {
             background-color: rgba(0,0,0,0.6);
           }
+
+          /* Existing CSS */
+/* ... */
+
+/* Responsive CSS */
+@media screen and (max-width: 1024px) {
+  #scnd-row {
+    width: 100%; /* Make the second row full width */
+  }
+
+  #slides2 {
+    flex-direction: column; /* Stack the slides vertically */
+    align-items: center; /* Center align the slides */
+  }
+
+  .navigation {
+    top: initial; /* Reset the top position */
+    transform: initial; /* Reset the transform */
+    flex-direction: row; /* Stack the arrows horizontally */
+    justify-content: center; /* Center align the arrows */
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    margin: 10px; /* Add some space between the arrows */
+    display: none;
+  }
+}
+
           .container-3rd-row {
             display: flex;
             margin-bottom: 20px;
@@ -438,6 +644,28 @@
             justify-content: center;
             height: 100%; /* Adjust according to your needs */
           }
+
+
+          /* Add a media query to hide the right panel and adjust the left panel */
+@media screen and (max-width: 1204px) {
+  .right-panel {
+    display: none; /* Hide the right panel on smaller screens */
+  }
+  
+  .left-panel {
+    flex-basis: 100%; /* Take up full width on smaller screens */
+    max-width: 100%; /* Ensure maximum width */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .left-img {
+    border-radius: 6px; /* Maintain the border radius */
+    border: 1px solid rgb(229, 229, 229); /* Maintain the border */
+  }
+}
+
+
+          
           .footer-content
           {
             background-color: rgb(245,245,245);
