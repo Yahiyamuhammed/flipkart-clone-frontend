@@ -86,11 +86,13 @@
     /* font-size: ; */
     width: 11vw;
   }
-  #login:hover a {
+  #login:hover  {
+    /* padding-left: 10px; */
     background-color: #1000f7; /* Background color when hovering */
     color: #ffffff; /* Text color when hovering */
     border-radius: 6px;
 }
+
 
 #login:hover img {
     filter: brightness(0) invert(1); /* Change image color to white */
@@ -799,3 +801,4 @@
         width: 100%;
           
       }
+      

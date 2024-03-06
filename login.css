@@ -1,0 +1,83 @@
+html{
+    background-color: #f0f0f0; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0!important; /* This will apply the background color to the whole screen */
+    margin: 0; /* This will remove any default margin */
+    height: 100vh; /* This will make the body take up the full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 50%!important; /* Adjust this value to control the width of the whole container */
+    height: 80%;
+}
+
+.login-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* This will make the login container take up the full width of the .container */
+    height: 100%;
+}
+
+.login-left {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    flex: 1; /* This will make the .login-left and .login-right elements share the space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will push the image to the bottom */
+    height: 93%;
+}
+
+.login-right {
+    padding: 20px;
+    flex: 1.5; /* This will make the .login-right element take up more space than the .login-left element */
+    height: 98%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mt-3 {
+    margin-top: 20px;
+   
+}
+.img-fluid
+{
+    margin-top: 35vh;
+    height: 20vh;
+    width: 15vw;
+}
+.tems{
+    padding-top: 25vh;
+}
